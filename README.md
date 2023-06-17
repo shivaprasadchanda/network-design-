@@ -133,23 +133,20 @@ The company will expand with purchases of other groups, these will initially rem
 
 Propose a network design to match these requests. The design should include layer 2 and layer 3 devices and connectivity and the required layer N infrastructure to support this. There are 3 departments (engineering, sales and management) and these departments are further divided into sub-departments (for example engineering has staff and production servers, so staff and production servers become sub-department). The sub-departments must be present in a subnet which is mandatory.  
 
-   
+The company wants to use domain names for their departments and sub-departments, so the company needs a separate DNS server to serve the IP addresses of their departments. The format for naming the domains is as follows: 
 
-Discussion points:  
+The format must be followed:  
+For engineering department- eng.cloudrevel.com  
 
-How should the ‘base’ network be done?  
-What options do we have concerning architecture?  
-Flat, hierarchical, other?  
-Growth/shrink, how does that impact, options?  
-Sizes of LAN/subnets?  
-Small, medium(??) large?  
-Capacity, resiliency?  
-Where, what?  
-Routing, VPN, Tunneling?  
-Monitoring  
+For sub-department, staff – staff.eng.cloudrevel.com  
+For sub-department, production servers – prod.eng.cloudrevel.com  
+For sales department- sales.cloudrevel.com  
 
-We start with the SME network as it would be after 24 months, i.e., it has grown with 25-50 engineering and 5-6 sales staff. Services I and J are deployed with 7500 customers/h.  
+For sub-department, staff – staff.sales.cloudrevel.com  
+For sub-department, technical writers – tech.sales.cloudrevel.com  
+For sub-department, customer support –cust.sales.cloudrevel.com  
+For management department – management.cloudrevel.com    
 
-The SME wants a simple monitoring solution for its entire network; it should monitor (1) when links go up/down. It should also monitor (2) link utilization, both bit and packet rates (both directions). For normal operations, 5 minutes averages are sufficient. Do an inventory of possible tools/solutions that can meet these requirements; you can propose two different tools/solutions or just one—reason on the architecture for the monitoring.  
+Hence, for example, if you have a PC34 in the Engineering/Staff network, it should be reachable via pc34.staff.eng.cloudrevel.com, similar for printerX in management, its printerX.management.cloudrevel.com.   
 
-As the SPU is critical for the company, these need to be monitored much more frequently. In this case, these need to be monitored at a 10s scale. How does this affect the monitoring solution?  
+ 
