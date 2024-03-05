@@ -19,7 +19,6 @@ The traffic patterns for the service groups are shown in Table 1. They are rough
 
 Mbyte/customer 
 
-Mbyte/customer 
 
 | Group | Customers/h | Load-In | Load-Out |
 |-------|--------------|---------|----------|
