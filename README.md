@@ -3,7 +3,8 @@ The SME should host three departments, Engineering, Sales, and Management. The E
 
 Picture1.png
 
- 
+ ![Picture1](https://github.com/shivaprasadchanda/network-design-/assets/85048550/f7fe16b0-c90f-4935-81d4-8e2bf22d25f6)
+
 
  
 
