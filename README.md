@@ -21,82 +21,18 @@ Mbyte/customer
 
 Mbyte/customer 
 
-Group 
+| Group | Customers/h | Load-In | Load-Out |
+|-------|--------------|---------|----------|
+| A     | 10,000       | 0.01    | 1        |
+| B     | 10,000       | 0.02    | 2        |
+| C     | 1,000        | 5       | 10       |
+| D     | 900          | 7       | 2        |
+| E     | 730          | 0.001   | 1        |
+| F     | 100          | 5       | 10       |
+| G     | 1,000        | 10      | 0.001    |
+| H     | 1,200        | 0.02    | 4        |
 
-Customers/h 
-
-Load-In 
-
-Load-Out 
-
-A 
-
-10 000 
-
-0,01 
-
-1 
-
-B 
-
-10 000 
-
-0,02 
-
-2 
-
-C 
-
-1 000 
-
-5 
-
-10 
-
-D 
-
-900 
-
-7 
-
-2 
-
-E 
-
-730 
-
-0,001 
-
-1 
-
-F 
-
-100 
-
-5 
-
-10 
-
-G 
-
-1 000 
-
-10 
-
-0,001 
-
-H 
-
-1 200 
-
-0,02 
-
-4 
-
-  
-
-  
-
+Let me know if you need any further assistance!
  The sales group consists of a back-office of around 10 people; here 4 are technical writers working on documentation and adaptation of documentation, 4 are working as customer support (close cooperation with Engineering group and customers), the last 2 are salespeople that work in the office. In addition to the back-office, the company has around 20 contracted salespeople travelling the world (these are rotated back to the office once every few years). The contracted salespeople are responsible for buying their laptops and peripherals, but they need to set up VPN connections to the main office to do their internal work. Hence, the network for the sales group has four different types of use; writing (4 computers), customer-support (4 computers), visiting-sales (30 computers, each salesperson has a physical desktop in the office), and a VPN server (using an SPU deployment just as in production to ensure operations). The VPN traffic is moderate, at most 30 customers/h. However, they generate around 10Mbps in/out traffic when they are active (using remote desktop). Once a remote salesperson connects, they can start a remote desktop connection to their on-site desktop.  
 
    
